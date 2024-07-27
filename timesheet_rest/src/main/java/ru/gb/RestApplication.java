@@ -2,6 +2,7 @@ package ru.gb;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.ApplicationContext;
 import ru.gb.model.*;
 import ru.gb.repository.ProjectRepository;
@@ -12,6 +13,7 @@ import ru.gb.repository.UserRoleRepository;
 import java.time.LocalDate;
 import java.util.concurrent.ThreadLocalRandom;
 
+@EnableDiscoveryClient
 @SpringBootApplication
 public class RestApplication {
 
